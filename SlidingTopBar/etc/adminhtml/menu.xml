@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MaioDev_SlidingTopBar::menu_id" title="Maio Dev" module="MaioDev_SlidingTopBar" sortOrder="10" action="frontname/controller/action" resource="MaioDev_SlidingTopBar::menu_id"/>
+    </menu>
+</config>

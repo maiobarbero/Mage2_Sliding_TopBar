@@ -1,0 +1,22 @@
+{
+    "name": "maiodev/module-slidingtopbar",
+    "description": "Add a top bar with a sliding text",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Matteo Barbero",
+            "email": "maiowebdesign@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MaioDev\\SlidingTopBar\\": ""
+        }
+    }
+}

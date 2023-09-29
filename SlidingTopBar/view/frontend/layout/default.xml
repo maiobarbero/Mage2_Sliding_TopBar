@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="MaioDev_SlidingTopBar::css/topbar.css" />
+    </head> 
+    <body>
+        <referenceContainer name="header.container">
+            <referenceBlock name="header.panel" remove="true"/>
+                    <block class="MaioDev\SlidingTopBar\Block\TopBar" name="maiodev.topbar.slider" template="MaioDev_SlidingTopBar::topbar.phtml" before="-">
+                    </block>
+        </referenceContainer>
+    </body>
+</page>

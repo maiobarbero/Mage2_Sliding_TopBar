@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <maiodev_topbar>
+            <sliding_topbar>
+                <sliding_topbar_is_sliding>0</sliding_topbar_is_sliding>
+                <sliding_topbar_text>Default text the topbar</sliding_topbar_text>
+                <sliding_topbar_speed>0</sliding_topbar_speed>
+            </sliding_topbar>
+        </maiodev_topbar>
+    </default>
+</config>

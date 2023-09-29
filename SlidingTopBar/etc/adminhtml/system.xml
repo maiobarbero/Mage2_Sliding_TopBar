@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+  <system>
+      <tab id="MaioDev" translate="label" sortOrder="550">
+          <label>MaioDev</label>
+      </tab>
+      <section id="maiodev_topbar" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+          <class>separator-top</class>
+          <label>Sliding Top Bar Settings</label>
+          <tab>MaioDev</tab>
+          <resource>MaioDev_SlidingTopBar::sliding_topbar</resource>
+
+          <group id="sliding_topbar" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20">
+              <label>General Configuration</label>
+              <field id="sliding_topbar_is_sliding" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                  <label>Activate the sliding effect</label>
+                  <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+              </field>
+              <field id="sliding_topbar_text" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                  <label>Top Bar text</label>
+              </field>
+              <field id="sliding_topbar_speed" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                  <label>Top Bar speed</label>
+                  <validate>validate-number validate-zero-or-greater</validate>
+                  <comment>Setting it to zero disable the sliding effect</comment>
+              </field>
+          </group>
+      </section>
+  </system>
+</config>

@@ -1,0 +1,23 @@
+<?php
+/** @var \MaioDev\SlidingTopBar\Block\Template $block */
+
+$topBarText = $block->escapeHtml($block->getTopBarText());
+$topBarSpeed = $block->getSpeed();
+$isSliding = $block->isSlidingActive();
+?>
+<div class="banner-container">
+    <div class="topbar-text <?=!$isSliding ? 'center' : '' ?>" id="topBarSliderText">
+        <?= $topBarText ?>
+    </div>
+</div>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "MaioDev_SlidingTopBar/js/topbar": {
+            "topBarSpeed": "<?= $topBarSpeed ?>",
+            "isSliding": "<?= $isSliding ? true : false ?>"
+        }
+    }
+}
+</script>
